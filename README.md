@@ -53,7 +53,7 @@ Video Walkthrough}
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](<iframe src="//giphy.com/embed/l2YOuplndX9rsxdQs" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/l2YOuplndX9rsxdQs">via GIPHY</a></p>)
+<iframe src="//giphy.com/embed/l2YOuplndX9rsxdQs" width="480" height="198" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/l2YOuplndX9rsxdQs">via GIPHY</a></p>
 
 Notes
 
