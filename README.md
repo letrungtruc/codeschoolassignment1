@@ -58,7 +58,7 @@ The following **known issues**:
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://i.giphy.com/l2YOuplndX9rsxdQs.gif)
+![Video Walkthrough](http://gph.is/1YTZ4dQ)
 
 ## Notes
 
