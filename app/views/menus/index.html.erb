@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+    <h1>Truc's Restaurant</h1>
+    <table>
+      <tbody>
+
+      <ul class="nav nav-tabs">
+        <% @sections.each do |section| %>
+            <li class="nav-item">
+              <%= link_to section, {controller: 'menus', section: section, search: @search}, class: "nav-link #{@section == section ? 'active' : ''}" %>
+            </li>
+        <% end %>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sort by</a>
+          <div class="dropdown-menu">
+            <%= link_to "sort A-Z", {controller: 'menus', section: @section, search: @search, sort: {field: 'name', order: 'asc'}}, class: "dropdown-item" %>
+            <%= link_to "sort Z-A", {controller: 'menus', section: @section, search: @search, sort: {field: 'name', order: 'desc'}}, class: "dropdown-item" %>
+            <%= link_to "Low price to high price", {controller: 'menus', section: @section, search: @search, sort: {field: 'price', order: 'asc'}}, class: "dropdown-item" %>
+            <%= link_to "High price to low price", {controller: 'menus', section: @section, search: @search, sort: {field: 'price', order: 'desc'}}, class: "dropdown-item" %>
+          </div>
+        </li>
+        <li class="nav-item">
+        <%= form_tag '/menus', method: :get, class: "form-inline navbar-form pull-right" do %>
+            <%= text_field_tag :search, params[:search] || @search, class: "form-control", placeholder: "Search" %>
+            <%= hidden_field_tag :section, params[:section] || @section %>
+          <% end %>
+        </li>
+      </ul>
+
+
+        <% @menus.each do |menu| %>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-block">
+                <img class="card-img-top" src="<%= menu.img_url%>">
+                <h4 class="card-title"><%= menu.name%></h4>
+                <p class="card-text"><%= menu.descriptions%></p>
+                <p class="card-text">PRICE: <%= number_to_currency menu.price, unit: 'VND', format: '%n %u' %></p>
+                <p class="card-text"><%= menu.section%></p>
+                <%= link_to "Order", {controller: "orders", action: "new", menu: menu.id}, class: "btn btn-primary-outline pull-right" %>
+              </div>
+             </div>
+          </div>
+        <% end %>
+      </tbody>
+    </table>
+<br>
+</div>
