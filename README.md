@@ -53,7 +53,7 @@ Video Walkthrough}
 
 Here's a walkthrough of implemented user stories:
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="fufXRxR"><a href="//imgur.com/fufXRxR">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+http://i.imgur.com/fufXRxR.gifv
 
 Notes
 
