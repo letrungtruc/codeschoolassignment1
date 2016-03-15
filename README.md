@@ -53,7 +53,7 @@ Video Walkthrough}
 
 Here's a walkthrough of implemented user stories:
 
-![Video Walkthrough](http://i.giphy.com/l2JJuDqSRBxrhJJpS.gif)
+![Video Walkthrough](http://i.giphy.com/l2YOuplndX9rsxdQs.gif)
 
 Notes
 
