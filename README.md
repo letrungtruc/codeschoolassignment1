@@ -53,7 +53,7 @@ Video Walkthrough}
 
 Here's a walkthrough of implemented user stories:
 
-[Imgur](http://i.imgur.com/fufXRxR.gifv)
+http://imgur.com/fufXRxR
 
 Notes
 
